@@ -3,7 +3,7 @@
 #include "../DistanceLines/DistanceLines.h"
 
 //1 Basic operations of Point3D
-static TEST(Point3DTest, BasicOperations) {
+TEST(Point3DTest, BasicOperations) {
     // Check - subtraction of two points resulting in a vector
     Point3D p1(1.0, 2.0, 3.0);
     Point3D p2(4.0, 5.0, 6.0);
@@ -32,7 +32,7 @@ static TEST(Point3DTest, BasicOperations) {
 }
 
 //2 Dot product calculation of two perpendicular vectors
-static TEST(Vector3DTest, DotProduct) {
+TEST(Vector3DTest, DotProduct) {
     // Checks - dot product of two perpendicular vectors is zero
     Vector3D v1(1, 0, 0);
     Vector3D v2(0, 1, 0);
@@ -41,7 +41,7 @@ static TEST(Vector3DTest, DotProduct) {
 }
 
 //3 Cross product calculation of two perpendicular vectors
-static TEST(Vector3DTest, CrossProduct) {
+TEST(Vector3DTest, CrossProduct) {
     // Cross product of (1,0,0) and (0,1,0) results in (0,0,1)
     Vector3D v1(1, 0, 0);
     Vector3D v2(0, 1, 0);
@@ -54,7 +54,7 @@ static TEST(Vector3DTest, CrossProduct) {
 }
 
 //4 Segment3D correctly calculates its direction vector
-static TEST(Segment3DTest, DirectionCalculation) {
+TEST(Segment3DTest, DirectionCalculation) {
     // Direction vector correctly represents difference between segment endpoints
     Point3D p1(0, 0, 0);
     Point3D p2(1, 1, 1);
@@ -68,7 +68,7 @@ static TEST(Segment3DTest, DirectionCalculation) {
 }
 
 //5 Distance calculation from a point to a segment
-static TEST(DistanceLinesTest, DistanceFromPointToSegment) {
+TEST(DistanceLinesTest, DistanceFromPointToSegment) {
     // Ensures that the computed distance is correct for a point not on segment
     Point3D p(1, 1, 1);
     Segment3D segment(Point3D(0, 0, 0), Point3D(2, 0, 0));
@@ -78,7 +78,7 @@ static TEST(DistanceLinesTest, DistanceFromPointToSegment) {
 }
 
 //6 Closest dots on two segments
-static TEST(DistanceLinesTest, ClosestDots) {
+TEST(DistanceLinesTest, ClosestDots) {
     // Closest dots between two parallel line segments
     Segment3D seg1(Point3D(0, 0, 0), Point3D(1, 0, 0));
     Segment3D seg2(Point3D(0, 1, 0), Point3D(1, 1, 0));
@@ -89,7 +89,7 @@ static TEST(DistanceLinesTest, ClosestDots) {
 }
 
 //7 Distance between two parallel line segments
-static TEST(DistanceLinesTest, DistanceBetweenLines) {
+TEST(DistanceLinesTest, DistanceBetweenLines) {
     // Minimal perpendicular distance between parallel segments
     Segment3D seg1(Point3D(0, 0, 0), Point3D(1, 0, 0));
     Segment3D seg2(Point3D(0, 1, 0), Point3D(1, 1, 0));

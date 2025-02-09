@@ -6,7 +6,7 @@
     double Vector3D::y() const { return _y; }
     double Vector3D::z() const { return _z; }
 
-    double Vector3D::dot(const Vector3D& other) const {
+double Vector3D::dot(const Vector3D& other) const {
         return _x * other._x + _y * other._y + _z * other._z;
     }
 
@@ -24,7 +24,9 @@
 
     Vector3D Vector3D::normalize() const {
         double len = length();
-        if (len == 0.0) throw std::logic_error("Cannot normalize zero vector");
+        if (len == 0.0){
+	        throw std::logic_error("Cannot normalize zero vector");
+        }
         return *this * (1.0 / len);
     }
 

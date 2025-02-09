@@ -138,7 +138,7 @@
     <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\DistanceLines.UnitTest\pch.h" />
+    <ClInclude Include="..\DistanceLines.UnitTests\pch.h" />
     <ClInclude Include="DistanceLines.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="Segment3D.h" />

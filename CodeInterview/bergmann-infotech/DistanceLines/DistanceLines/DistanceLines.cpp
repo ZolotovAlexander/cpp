@@ -38,7 +38,8 @@ std::pair<double, double> closest_dots(const Segment3D& seg1, const Segment3D& s
     double denom = a * c - b * b;
 
     double s, t;
-    if (denom < 1e-9) { // Paralell lines
+
+    if (denom < 1e-9) { // Parallel lines
         s = 0.0;
         t = (b > c) ? d / b : e / c;
     }

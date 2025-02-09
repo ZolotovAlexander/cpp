@@ -11,11 +11,28 @@ private:
 public:
     Segment3D(const Point3D& start, const Point3D& end);
 
+    /**
+     * \brief Start line
+     * \return 
+     */
     const Point3D& start() const;
+
+    /**
+     * \brief End line
+     * \return 
+     */
     const Point3D& end() const;
 
+    /**
+     * \brief Line direction
+     * \return 
+     */
     Vector3D direction() const;
 
+    /**
+     * \brief Lenght of line
+     * \return 
+     */
     double length() const;
 };
 

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistanceLines", "DistanceLines\DistanceLines.vcxproj", "{3BAF6128-23ED-4D4B-B54D-87013D8959E4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistanceLines.UnitTest", "DistanceLines.UnitTest\DistanceLines.UnitTest.vcxproj", "{31D88DBD-DD26-4F6E-816C-409C7651D4DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistanceLines.UnitTests", "DistanceLines.UnitTests\DistanceLines.UnitTests.vcxproj", "{31D88DBD-DD26-4F6E-816C-409C7651D4DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
