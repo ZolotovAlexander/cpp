@@ -116,6 +116,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\DistanceLines\BasePoint3D.cpp" />
     <ClCompile Include="..\DistanceLines\DistanceLines.cpp" />
     <ClCompile Include="..\DistanceLines\Point3D.cpp" />
     <ClCompile Include="..\DistanceLines\Segment3D.cpp" />

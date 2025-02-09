@@ -2,17 +2,12 @@
 
 #ifndef VECTOR3D_H
 #define VECTOR3D_H
+#include "BasePoint3D.h"
 
-class Vector3D {
-private:
-    double _x, _y, _z;
+class Vector3D : public BasePoint3D {
 
 public:
     Vector3D(double x , double y, double z );
-
-    double x() const;
-    double y() const;
-    double z() const;
 
    /**
 	* \brief Dot product of this vector with another

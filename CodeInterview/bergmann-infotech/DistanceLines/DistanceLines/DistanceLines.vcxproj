@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasePoint3D.cpp" />
     <ClCompile Include="DistanceLines.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point3D.cpp" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DistanceLines.UnitTests\pch.h" />
+    <ClInclude Include="BasePoint3D.h" />
     <ClInclude Include="DistanceLines.h" />
     <ClInclude Include="Point3D.h" />
     <ClInclude Include="Segment3D.h" />

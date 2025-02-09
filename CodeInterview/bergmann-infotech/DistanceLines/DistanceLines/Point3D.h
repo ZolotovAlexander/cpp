@@ -2,20 +2,15 @@
 
 #ifndef POINT3D_H
 #define POINT3D_H
+#include "BasePoint3D.h"
 
 /**
  * \brief Point in 3 decart dimensions
  */
-class Point3D {
-private:
-    double _x, _y, _z;
+class Point3D : public BasePoint3D {
 
 public:
-    Point3D(double x, double y, double z);
-
-    double x() const;
-    double y() const;
-    double z() const;
+    Point3D(double x = 0.0, double y = 0.0, double z = 0.0);
 
     Point3D operator+(const class Vector3D& other_vec) const;
 

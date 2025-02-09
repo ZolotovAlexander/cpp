@@ -1,10 +1,6 @@
 #include "DistanceLines.h"
 
-   Vector3D::Vector3D(double x = 0.0, double y = 0.0, double z = 0.0) : _x(x), _y(y), _z(z) {}
-
-    double Vector3D::x() const { return _x; }
-    double Vector3D::y() const { return _y; }
-    double Vector3D::z() const { return _z; }
+Vector3D::Vector3D(double x, double y, double z) : BasePoint3D(x, y, z) {}
 
 double Vector3D::dot(const Vector3D& other) const {
         return _x * other._x + _y * other._y + _z * other._z;

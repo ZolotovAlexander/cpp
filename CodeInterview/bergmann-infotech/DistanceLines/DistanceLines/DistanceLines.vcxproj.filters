@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{eb9ef412-99f5-4246-a909-2080bf3c73da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{6b2b6a4d-c5d6-4609-afc1-188830e96546}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DistanceLines.cpp">
@@ -30,6 +36,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BasePoint3D.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DistanceLines.h">
@@ -44,8 +53,11 @@
     <ClInclude Include="Segment3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\DistanceLines.UnitTest\pch.h">
+    <ClInclude Include="..\DistanceLines.UnitTests\pch.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePoint3D.h">
+      <Filter>Header Files\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
